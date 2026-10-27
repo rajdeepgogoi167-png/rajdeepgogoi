@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08090a" />
+  <meta name="description" content="Rajdeep Gogoi, BCA student and software and AI developer. Open to internships and referrals." />
+  <title>Rajdeep Gogoi | Software &amp; AI Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Mrs+Saint+Delafield&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"><span></span></div>
+
+  <div class="weather" aria-hidden="true">
+    <div id="streaks"></div>
+    <div class="spirit spirit-a"><i></i></div>
+    <div class="spirit spirit-b"><i></i></div>
+    <div class="soft-shape shape-a"></div>
+    <div class="soft-shape shape-b"></div>
+    <div class="weather-veil"></div>
+  </div>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="home interactive" href="#intro" aria-label="Home">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 10 8-7 8 7v10h-6v-6h-4v6H4Z" /></svg>
+      </a>
+
+      <div class="nav-links">
+        <a class="interactive" href="#projects">Projects</a>
+        <a class="interactive" href="#experience">Experience</a>
+        <a class="interactive" href="#stack">Stack</a>
+        <a class="interactive" href="#github">GitHub</a>
+        <a class="interactive" href="#education">Education</a>
+        <a class="interactive" href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="nav-icon terminal-toggle interactive" type="button" aria-label="Toggle status panel">&gt;_</button>
+        <button class="nav-icon theme-toggle interactive" type="button" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <aside class="terminal" aria-live="polite">
+    <div class="terminal-bar"><i></i><i></i><i></i></div>
+    <p><strong>rajdeep@portfolio</strong>:~$ status</p>
+    <p>Available for internships and referrals</p>
+    <div class="term-out" id="termOut" role="log"></div>
+    <form class="term-in" id="termForm"><span aria-hidden="true">$</span><input id="termInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="type help" aria-label="Terminal command" /></form>
+  </aside>
+
+  <main>
+    <section class="hero" id="intro">
+      <div class="hero-heading reveal">
+        <h1>Rajdeep Gogoi</h1>
+        <p class="role" aria-label="Software &amp; AI developer, BCA student"><span class="prompt" aria-hidden="true">$</span><span id="role-text" aria-hidden="true">Software &amp; AI developer, BCA student</span><i class="caret" aria-hidden="true"></i></p>
+      </div>
+
+      <div class="portrait reveal image-fallback" data-fallback="RG">
+        <span class="portrait-orbit"></span>
+        <img src="Assets/img.jpg" alt="Portrait of Rajdeep Gogoi" />
+        <b>••</b>
+      </div>
+
+      <div class="bio reveal">
+        <p>I'm a <strong>BCA student</strong> focused on <strong>software development and AI</strong>.</p>
+        <p>I'm active in campus developer communities and enjoy working with other builders.</p>
+        <p>I'm looking for <strong>connecting with other developers</strong> and want to build something together.</p>
+      </div>
+
+      <div class="socials reveal" aria-label="Social links">
+        <a class="social interactive" href="https://github.com/rajdeepgogoi167-png/" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12.02c0 4.42 2.87 8.18 6.84 9.5.5.09.68-.22.68-.48v-1.7c-2.78.61-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0 1 12 6.84a9.6 9.6 0 0 1 2.5.34c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10.02 10.02 0 0 0 22 12.02C22 6.48 17.52 2 12 2Z" /></svg>
+        </a>
+        <a class="social interactive" href="https://www.linkedin.com/in/rajdeep-gogoi-b30a67366/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.04c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.55V9h3.57Z" /></svg>
+        </a>
+        <a class="social interactive" href="https://x.com/rajdeepgogoi864" target="_blank" rel="noopener" aria-label="X">
+          <svg viewBox="0 0 24 24"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-4.72-6.23-5.4 6.23H2.74l7.73-8.84L1.25 2.25h6.83l4.26 5.63Zm-1.16 17.52h1.83L7.08 4.13H5.12Z" /></svg>
+        </a>
+        <a class="social social-discord interactive" id="discordLink" href="https://discord.com/users/YOUR_DISCORD_USER_ID" target="_blank" rel="noopener" aria-label="Discord">
+          <svg viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z" /></svg>
+          <span class="presence-dot" aria-hidden="true"></span>
+        </a>
+        <a class="social interactive" href="mailto:rajdeepgogoi167@gmail.com" aria-label="Email">
+          <svg class="mail" viewBox="0 0 24 24"><path d="M3 5h18v14H3Zm1.8 1.8L12 12l7.2-5.2M4.8 17.2l5.7-5M19.2 17.2l-5.7-5" /></svg>
+        </a>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <header class="section-heading reveal">
+        <p>Work</p>
+        <h2>Projects</h2>
+      </header>
+
+      <div class="projects-list">
+        <article class="project reveal interactive-card">
+          <span class="number">01</span>
+          <div class="project-info">
+            <header>
+              <h3>HORIZON</h3>
+              <span class="status-badge">Full-stack</span>
+            </header>
+            <p>A doctor-booking platform for healthcare access during emergencies. It covers appointmentsd hospital views, referrals, blood requests and symptom sharing. </p>
+          <a class="status-badge interactive" href="https://github.com/rajdeepgogoi167-png/HORIZON" target="_blank" rel="noopener" hidden>View credential ↗</a>
+        </div>
+          <div class="thumb-wrapper">
+            <span class="project-thumb image-fallback" data-fallback="HZ">
+              <img src="Assets/horizon.jpg" alt="HORIZON" loading="lazy" />
+            </span>
+          </div>
+        </article>
+
+        <article class="project reveal interactive-card">
+          <span class="number">02</span>
+          <div class="project-info">
+            <header>
+              <h3>Pokémon-inspired game</h3>
+              <span class="status-badge">Initial Stage</span>
+            </header>
+            <p>A Pokémon-inspired game in development, built together with <a class="interactive" href="https://github.com/suvrajk" target="_blank" rel="noopener noreferrer">Suvraj</a>.</p>
+          </div>
+          <div class="thumb-wrapper">
+            <span class="project-thumb image-fallback" data-fallback="PG">
+              <img src="Assets/Pokemon.png" alt="Pokémon-inspired game" loading="lazy" />
+            </span>
+          </div>
+        </article>
+
+        <article class="project reveal interactive-card">
+          <span class="number">03</span>
+          <div class="project-info">
+            <header>
+              <h3>Personal AI assistant</h3>
+              <span class="status-badge">Early stage</span>
+            </header>
+            <p>A personal AI assistant in early development. <strong>More details soon.</strong></p>
+          </div>
+          <div class="thumb-wrapper">
+            <span class="project-thumb image-fallback" data-fallback="AI">
+              <img src="Assets/Ai.png" alt="Personal AI assistant" loading="lazy" />
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <header class="section-heading reveal">
+        <p>Background</p>
+        <h2>Experience</h2>
+      </header>
+
+      <div class="experience">
+        <article class="experience-card reveal interactive-card">
+          <header>
+            <div>
+              <h3>Campus Mantri</h3>
+              <p class="org">Geeks For Geeks</p>
+            </div>
+            <span class="status-badge">Campus Community</span>
+          </header>
+          <p>Currently working as a Campus Mantri in Geeks For Geeks. Focused on the campus developer community, developer initiatives and community engagement.</p>
+          <!-- To show a credential: add the file or link to href and delete the word "hidden". -->
+          <a class="status-badge interactive" href="" target="_blank" rel="noopener" hidden>View credential ↗</a>
+        </article>
+
+        <article class="experience-card reveal interactive-card">
+          <header>
+            <div>
+              <h3>Sub-Coordinator</h3>
+              <p class="org">Game of Codes (GOC)</p>
+            </div>
+            <span class="status-badge">Campus community</span>
+          </header>
+          <p>Supported coordination and event execution for Game of Codes, working with teammates and contributing to the campus coding community.</p>
+          <!-- To show a credential: add the file or link to href and delete the word "hidden". -->
+          <a class="status-badge interactive" href="" target="_blank" rel="noopener" hidden>View credential ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <header class="section-heading reveal">
+        <p>Toolbox</p>
+        <h2>Stack</h2>
+      </header>
+
+      <div class="stack-groups reveal">
+        <div class="stack-group">
+          <h3 class="stack-title">Languages</h3>
+          <div class="stack-grid">
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" loading="lazy" />
+          <span>Python</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" loading="lazy" />
+          <span>Java</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" loading="lazy" />
+          <span>JavaScript</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" loading="lazy" />
+          <span>HTML</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" loading="lazy" />
+          <span>CSS</span>
+        </div>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3 class="stack-title">Frameworks</h3>
+          <div class="stack-grid">
+            <div class="stack-item interactive-card">
+          <img src="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2024%2024%22%3E%3Cpath%20fill=%22%23009688%22%20d=%22M12%20.0387C5.3729.0384.0003%205.3931%200%2011.9988c-.001%206.6066%205.372%2011.9628%2012%2011.9625%206.628.0003%2012.001-5.3559%2012-11.9625-.0003-6.6057-5.3729-11.9604-12-11.96m-.829%205.4153h7.55l-7.5805%205.3284h5.1828L5.279%2018.5436q2.9466-6.5444%205.892-13.0896%22/%3E%3C/svg%3E" alt="FastAPI" loading="lazy" />
+          <span>FastAPI</span>
+        </div>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3 class="stack-title">Tools</h3>
+          <div class="stack-grid">
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" loading="lazy" />
+          <span>Git</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img class="invert-on-dark" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" loading="lazy" />
+          <span>GitHub</span>
+        </div>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3 class="stack-title">Editors &amp; IDEs</h3>
+          <div class="stack-grid">
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" loading="lazy" />
+          <span>VS Code</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg" alt="IntelliJ IDEA" loading="lazy" />
+          <span>IntelliJ</span>
+        </div>
+            <div class="stack-item interactive-card">
+          <img src="https://www.cursor.com/favicon.ico" alt="Cursor" loading="lazy" />
+          <span>Cursor</span>
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="github">
+      <header class="section-heading reveal">
+        <p>Open source</p>
+        <h2>GitHub contributions</h2>
+      </header>
+
+      <div class="github-card reveal" data-username="rajdeepgogoi167-png">
+        <div class="github-status">Loading contributions…</div>
+        <div class="github-scroll">
+          <div class="github-months"></div>
+          <div class="github-grid"></div>
+        </div>
+        <div class="github-foot">
+          <p class="github-total"></p>
+          <div class="github-legend">
+            <span>Less</span>
+            <i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i>
+            <span>More</span>
+          </div>
+        </div>
+        <p class="github-note">🚧 Currently in development — more commits, features, and improvements coming soon.</p>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <header class="section-heading reveal">
+        <p>Academic</p>
+        <h2>Education</h2>
+      </header>
+
+      <div class="education">
+        <article class="education-card reveal interactive-card">
+          <div class="school-image image-fallback" data-fallback="CCSA"><img src="Assets/LOGO.jpg" alt="Centre for Computer Science &amp; Applications" /></div>
+          <div class="school-body">
+            <h3>Centre for Computer Science &amp; Applications</h3>
+            <p>Bachelor of Computer Applications</p>
+          </div>
+          <time>2025 – Present</time>
+        </article>
+        <article class="education-card reveal interactive-card">
+          <div class="school-image image-fallback" data-fallback="RSSS"><img src="Assets/RSSS.jpeg" alt="Reliance Senior Secondary School" /></div>
+          <div class="school-body">
+            <h3>Reliance Senior Secondary School</h3>
+            <p>Higher Secondary</p>
+          </div>
+          <time>2023 – 2025</time>
+        </article>
+        <article class="education-card reveal interactive-card">
+          <div class="school-image image-fallback" data-fallback="KCHMS"><img src="Assets/KCHMS.jpg" alt="Keshab Chandra Hazrika Memorial School" /></div>
+          <div class="school-body">
+            <h3>Keshab Chandra Hazrika Memorial School</h3>
+            <p>Primary and secondary education</p>
+          </div>
+          <time>2009 – 2023</time>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <header class="section-heading reveal">
+        <p>Contact</p>
+        <h2>Get in touch</h2>
+      </header>
+
+      <div class="gt-wrap reveal">
+        <div class="gt-card" id="gtCard">
+          <p class="gt-status"><i></i>Available for internships and referrals</p>
+          <p class="gt-title">I'd love to hear from you.</p>
+          <p class="gt-sub">Open to <strong>internships and referrals</strong>. Say hi, I reply fast.</p>
+
+          <div class="gt-row">
+            <button class="gt-signature interactive" type="button" aria-label="Rajdeep Gogoi signature, click to replay">
+              <span>Rajdeep Gogoi</span>
+              <svg viewBox="0 0 200 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 40 2, 80 11, 120 5 S 180 4, 198 7" /></svg>
+            </button>
+            <a class="gt-button interactive" href="mailto:rajdeepgogoi167@gmail.com"><span>Let's talk</span><b aria-hidden="true">↗</b></a>
+          </div>
+
+          <button class="gt-email interactive" type="button" data-email="rajdeepgogoi167@gmail.com" aria-label="Copy email address">
+           
+          </button>
+          <span class="gt-live" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> <strong>Rajdeep Gogoi</strong></p>
+  </footer>
+</body>
+</html>
